@@ -6,73 +6,60 @@
     <title>Jamarbo - Página Personal</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #121212;
-            color: #E0E0E0;
+            background-color: #f5f5f5;
+            color: #333;
         }
         header {
-            background: linear-gradient(90deg, #1CB5E0, #000851);
+            background-color: #4CAF50;
             color: white;
-            padding: 2rem;
+            padding: 1rem;
             text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         nav {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            background-color: #1f1f1f;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            flex-direction: column;
+            width: 250px;
+            position: fixed;
+            height: 100%;
+            background-color: #333;
+            padding-top: 20px;
         }
         nav a {
-            color: #E0E0E0;
-            padding: 1rem 2rem;
+            color: white;
+            padding: 15px;
             text-decoration: none;
             text-transform: uppercase;
-            transition: background 0.3s ease;
-            flex: 1 1 100px;
-            text-align: center;
+            display: block;
         }
         nav a:hover {
-            background-color: #1CB5E0;
+            background-color: #575757;
         }
-        .container {
-            padding: 2rem;
-            max-width: 1200px;
-            margin: auto;
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
         }
         .section {
             margin-bottom: 2rem;
             padding: 2rem;
-            background-color: #1e1e1e;
+            background-color: white;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         h2 {
-            color: #1CB5E0;
+            color: #4CAF50;
         }
         footer {
-            background-color: #1f1f1f;
+            background-color: #333;
             color: #E0E0E0;
             text-align: center;
             padding: 1rem;
             position: fixed;
             width: 100%;
             bottom: 0;
-            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-        }
-        @media (max-width: 768px) {
-            nav a {
-                padding: 0.5rem;
-            }
-            .container {
-                padding: 1rem;
-            }
-            .section {
-                padding: 1rem;
-            }
+            margin-left: 250px;
         }
     </style>
 </head>
@@ -91,7 +78,7 @@
         <a href="#cloud">Cloud Computing</a>
         <a href="#devops">DevOPS</a>
     </nav>
-    <div class="container">
+    <div class="main-content">
         <div id="tecnologia" class="section">
             <h2>Tecnología</h2>
             <p>Aquí encontrarás información sobre las últimas tendencias y avances en tecnología.</p>
