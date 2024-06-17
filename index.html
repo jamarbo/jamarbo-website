@@ -29,34 +29,41 @@
             font-size: 1.2rem;
         }
         nav {
-            display: flex;
-            flex-direction: column;
-            width: 250px;
             position: fixed;
+            left: 0;
+            top: 0;
             height: 100%;
+            width: 60px;
             background-color: #333;
-            padding-top: 20px;
-            transition: width 0.3s;
-            overflow: hidden;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        nav:hover {
+            width: 250px;
         }
         nav a {
-            color: #fff;
-            padding: 15px 20px;
+            padding: 10px 15px;
             text-decoration: none;
-            text-transform: uppercase;
+            font-size: 1.2rem;
+            color: #fff;
             display: block;
-            transition: background 0.3s, padding 0.3s;
-            font-size: 1rem;
+            transition: 0.3s;
             white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         nav a:hover {
-            background-color: #555;
+            background-color: #575757;
             padding-left: 30px;
         }
         .main-content {
-            margin-left: 250px;
+            margin-left: 60px;
             padding: 20px;
-            transition: margin-left 0.3s;
+            transition: margin-left 0.5s;
+        }
+        nav:hover ~ .main-content {
+            margin-left: 250px;
         }
         .section {
             margin-bottom: 2rem;
@@ -82,36 +89,41 @@
             position: fixed;
             width: 100%;
             bottom: 0;
-            transition: margin-left 0.3s;
         }
         @media (max-width: 768px) {
             nav {
-                width: 80px;
+                width: 60px;
             }
-            nav a {
-                text-align: center;
-                padding: 10px;
-                font-size: 0.8rem;
+            nav:hover {
+                width: 200px;
             }
             .main-content {
-                margin-left: 80px;
+                margin-left: 60px;
                 padding: 10px;
             }
+            nav:hover ~ .main-content {
+                margin-left: 200px;
+            }
             footer {
-                margin-left: 80px;
+                margin-left: 60px;
             }
         }
         @media (max-width: 480px) {
             nav {
                 width: 60px;
             }
+            nav:hover {
+                width: 150px;
+            }
             nav a {
-                padding: 8px;
-                font-size: 0.7rem;
+                font-size: 1rem;
             }
             .main-content {
                 margin-left: 60px;
                 padding: 5px;
+            }
+            nav:hover ~ .main-content {
+                margin-left: 150px;
             }
             footer {
                 margin-left: 60px;
