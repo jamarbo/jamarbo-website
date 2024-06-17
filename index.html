@@ -1,27 +1,32 @@
-Aquí tienes una versión mejorada de tu código HTML. He realizado algunos ajustes para mejorar la accesibilidad, la semántica y la eficiencia del código.
-
-```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jamarbo - Página Personal</title>
+    <title>Jamarbo - Portafolio</title>
     
     <style>
         body {
-            font-family: 'Courier New', Courier, monospace;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #1e1e1e;
-            color: #dcdcdc;
+            background-color: #f4f4f4;
+            color: #333;
         }
         header {
-            background-color: #f0db4f;
-            color: #323330;
-            padding: 1rem;
+            background-color: #007acc;
+            color: #fff;
+            padding: 2rem 1rem;
             text-align: center;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 1.2rem;
         }
         nav {
             display: flex;
@@ -29,20 +34,24 @@ Aquí tienes una versión mejorada de tu código HTML. He realizado algunos ajus
             width: 250px;
             position: fixed;
             height: 100%;
-            background-color: #323330;
+            background-color: #333;
             padding-top: 20px;
             transition: width 0.3s;
+            overflow: hidden;
         }
         nav a {
-            color: #f0db4f;
-            padding: 15px;
+            color: #fff;
+            padding: 15px 20px;
             text-decoration: none;
             text-transform: uppercase;
             display: block;
-            transition: background 0.3s;
+            transition: background 0.3s, padding 0.3s;
+            font-size: 1rem;
+            white-space: nowrap;
         }
         nav a:hover {
-            background-color: #575757;
+            background-color: #555;
+            padding-left: 30px;
         }
         .main-content {
             margin-left: 250px;
@@ -52,16 +61,22 @@ Aquí tienes una versión mejorada de tu código HTML. He realizado algunos ajus
         .section {
             margin-bottom: 2rem;
             padding: 2rem;
-            background-color: #2d2d2d;
+            background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         h2 {
-            color: #f0db4f;
+            color: #007acc;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            line-height: 1.6;
+            font-size: 1rem;
         }
         footer {
-            background-color: #323330;
-            color: #dcdcdc;
+            background-color: #333;
+            color: #fff;
             text-align: center;
             padding: 1rem;
             position: fixed;
@@ -107,7 +122,7 @@ Aquí tienes una versión mejorada de tu código HTML. He realizado algunos ajus
 <body>
     <header>
         <h1>Jamarbo</h1>
-        <p>Bienvenido a mi página personal</p>    
+        <p>Portafolio de Desarrollo de Software</p>    
     </header>
     
     <nav>
