@@ -140,7 +140,7 @@ function setupTypewriter() {
     const typewriterElement = document.querySelector('.title-typewriter');
     if (!typewriterElement) return;
     
-    const texts = ['Full Stack Developer', 'Software Engineer', 'Tech Enthusiast', 'Problem Solver'];
+    const texts = ['Technical Lead', 'Senior Java Developer', 'Systems Engineer', 'Agile Developer', 'DevOps Expert'];
     let textIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
