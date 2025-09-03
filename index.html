@@ -3,65 +3,567 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jaiver Martinez - Portafolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">    
+    <title>Jaiver Martinez - Full Stack Developer</title>
+    <meta name="description" content="Portfolio profesional de Jaiver Martinez - Desarrollador Full Stack especializado en tecnologías modernas, cloud computing y DevOps">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
 </head>
 <body>
-    <header>
-        <h1>Jaiver Martinez</h1>
-        <p>Portafolio de Desarrollo de Software</p>    
-    </header>
-    
-    <nav>
-        <a href="#tecnologia">Tecnología</a>
-        <a href="#desarrollo">Desarrollo de Software</a>
-        <a href="#gestion">Gestión de Proyectos</a>
-        <a href="#scrum">SCRUM</a>
-        <a href="#java">Java</a>
-        <a href="#basesdedatos">Bases de Datos</a>
-        <a href="#cloud">Cloud Computing</a>
-        <a href="#devops">DevOPS</a>
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">&lt;JM/&gt;</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link">Inicio</a></li>
+                <li><a href="#about" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                <li><a href="#projects" class="nav-link">Proyectos</a></li>
+                <li><a href="#experience" class="nav-link">Experiencia</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <main class="main-content">
-        <section id="tecnologia" class="section">
-            <img src="images/tecnologia.jpg" alt="Tecnología">
-            <h2>Tecnología</h2>
-            <p>Aquí encontrarás información sobre las últimas tendencias y avances en tecnología.</p>
-        </section>
-        <section id="desarrollo" class="section">
-            <h2>Desarrollo de Software</h2>
-            <p>Explora mis proyectos y experiencias en el desarrollo de software.</p>
-        </section>
-        <section id="gestion" class="section">
-            <h2>Gestión de Proyectos</h2>
-            <p>Descubre mis métodos y herramientas favoritas para la gestión de proyectos.</p>
-        </section>
-        <section id="scrum" class="section">
-            <h2>SCRUM</h2>
-            <p>Aprende sobre mi enfoque en SCRUM y cómo lo aplico en mis proyectos.</p>
-        </section>
-        <section id="java" class="section">
-            <h2>Java</h2>
-            <p>Conoce mi experiencia y proyectos desarrollados en Java.</p>
-        </section>
-        <section id="basesdedatos" class="section">
-            <h2>Bases de Datos</h2>
-            <p>Información sobre mi trabajo con bases de datos y mejores prácticas.</p>
-        </section>
-        <section id="cloud" class="section">
-            <h2>Cloud Computing</h2>
-            <p>Descubre cómo utilizo las tecnologías de Cloud Computing en mis proyectos.</p>
-        </section>
-        <section id="devops" class="section">
-            <h2>DevOPS</h2>
-            <p>Explora mis métodos y herramientas en el ámbito de DevOPS.</p>
-        </section>
-    </main>
-    
-    <footer>
-        <p>&copy; 2024 Jamarbo. Todos los derechos reservados.</p>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background">
+            <div class="matrix-rain"></div>
+            <div class="floating-icons">
+                <i class="fab fa-js-square"></i>
+                <i class="fab fa-react"></i>
+                <i class="fab fa-node-js"></i>
+                <i class="fab fa-python"></i>
+                <i class="fab fa-java"></i>
+                <i class="fab fa-docker"></i>
+                <i class="fab fa-aws"></i>
+                <i class="fab fa-git-alt"></i>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="greeting">Hola, soy</span>
+                    <span class="name">Jaiver Martinez</span>
+                    <span class="title-typewriter">Full Stack Developer</span>
+                </h1>
+                <p class="hero-description">
+                    Transformo ideas en aplicaciones web modernas y escalables. 
+                    Especializado en tecnologías de vanguardia, arquitectura cloud y metodologías ágiles.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-code"></i>
+                        Ver Proyectos
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i>
+                        Contactar
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/jamarbo" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/jamarbo" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:jaiver@example.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-container">
+                    <div class="profile-image">
+                        <img src="images/tecnologia.jpg" alt="Jaiver Martinez - Full Stack Developer">
+                    </div>
+                    <div class="code-snippet">
+                        <div class="code-header">
+                            <span class="code-lang">TypeScript</span>
+                            <div class="code-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="code-content">
+                            <pre><code><span class="keyword">const</span> <span class="variable">developer</span> = {
+  <span class="property">name</span>: <span class="string">'Jaiver Martinez'</span>,
+  <span class="property">role</span>: <span class="string">'Full Stack Developer'</span>,
+  <span class="property">skills</span>: [<span class="string">'React'</span>, <span class="string">'Node.js'</span>, <span class="string">'AWS'</span>],
+  <span class="property">passion</span>: <span class="string">'Building amazing apps'</span>
+};</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre Mí</h2>
+                <p class="section-subtitle">Conoce mi trayectoria y pasión por la tecnología</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-card">
+                        <h3>Mi Historia</h3>
+                        <p>
+                            Soy un desarrollador Full Stack apasionado por crear soluciones tecnológicas innovadoras. 
+                            Con amplia experiencia en el desarrollo de aplicaciones web modernas, me especializo en 
+                            arquitecturas escalables y metodologías ágiles.
+                        </p>
+                        <p>
+                            Mi enfoque se centra en escribir código limpio, implementar mejores prácticas y 
+                            mantenerse al día con las últimas tendencias tecnológicas. Disfruto trabajando 
+                            en equipos colaborativos y liderando proyectos desde la concepción hasta el despliegue.
+                        </p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Años de Experiencia</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Proyectos Completados</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">Tecnologías Dominadas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="tech-stack-visual">
+                        <div class="stack-layer frontend">
+                            <h4>Frontend</h4>
+                            <div class="tech-icons">
+                                <i class="fab fa-react"></i>
+                                <i class="fab fa-vue"></i>
+                                <i class="fab fa-angular"></i>
+                            </div>
+                        </div>
+                        <div class="stack-layer backend">
+                            <h4>Backend</h4>
+                            <div class="tech-icons">
+                                <i class="fab fa-node-js"></i>
+                                <i class="fab fa-python"></i>
+                                <i class="fab fa-java"></i>
+                            </div>
+                        </div>
+                        <div class="stack-layer database">
+                            <h4>Database</h4>
+                            <div class="tech-icons">
+                                <i class="fas fa-database"></i>
+                                <i class="fas fa-server"></i>
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Habilidades Técnicas</h2>
+                <p class="section-subtitle">Tecnologías y herramientas que domino</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">React.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Vue.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">TypeScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CSS/SASS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="93%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="87%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Express.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="91%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Bases de Datos</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">PostgreSQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="89%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MongoDB</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="86%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Redis</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-cloud"></i>
+                        <h3>Cloud & DevOps</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">AWS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="91%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Docker</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="87%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Kubernetes</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="83%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CI/CD</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="89%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Proyectos Destacados</h2>
+                <p class="section-subtitle">Algunos de mis trabajos más recientes</p>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="images/tecnologia.jpg" alt="E-commerce Platform">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Plataforma E-commerce</h3>
+                        <p>Aplicación web completa con React, Node.js y PostgreSQL. Incluye carrito de compras, pagos integrados y panel de administración.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">AWS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="backend">
+                    <div class="project-image">
+                        <img src="images/tecnologia.jpg" alt="API RESTful">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>API RESTful Escalable</h3>
+                        <p>API robusta con autenticación JWT, rate limiting y documentación completa. Deployada en contenedores Docker.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">JWT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="images/tecnologia.jpg" alt="Dashboard Analytics">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Dashboard de Analytics</h3>
+                        <p>Panel de control interactivo con visualizaciones en tiempo real y reportes avanzados para análisis de datos empresariales.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">D3.js</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Redis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experiencia Profesional</h2>
+                <p class="section-subtitle">Mi trayectoria en el desarrollo de software</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 - Presente</div>
+                    <div class="timeline-content">
+                        <h3>Senior Full Stack Developer</h3>
+                        <h4>Tech Solutions Inc.</h4>
+                        <p>Lidero el desarrollo de aplicaciones web escalables utilizando arquitecturas modernas. Implemento soluciones cloud-native en AWS y mentoreo a desarrolladores junior.</p>
+                        <ul>
+                            <li>Desarrollo de microservicios con Node.js y Python</li>
+                            <li>Implementación de pipelines CI/CD con Jenkins y GitHub Actions</li>
+                            <li>Optimización de rendimiento que resultó en 40% menos tiempo de carga</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2020 - 2022</div>
+                    <div class="timeline-content">
+                        <h3>Full Stack Developer</h3>
+                        <h4>Digital Innovations</h4>
+                        <p>Desarrollé aplicaciones web completas para clientes corporativos, enfocándome en React, Node.js y bases de datos relacionales.</p>
+                        <ul>
+                            <li>Construcción de SPAs con React y Redux</li>
+                            <li>Desarrollo de APIs RESTful con Express.js</li>
+                            <li>Integración con servicios de terceros y APIs externas</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2018 - 2020</div>
+                    <div class="timeline-content">
+                        <h3>Frontend Developer</h3>
+                        <h4>StartupXYZ</h4>
+                        <p>Colaboré en el desarrollo de la interfaz de usuario de una plataforma SaaS, implementando diseños responsivos y optimizando la experiencia del usuario.</p>
+                        <ul>
+                            <li>Desarrollo de componentes reutilizables en React</li>
+                            <li>Implementación de diseño responsivo con CSS Grid y Flexbox</li>
+                            <li>Optimización de performance y accesibilidad web</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Trabajemos Juntos</h2>
+                <p class="section-subtitle">¿Tienes un proyecto en mente? Hablemos</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>jaiver@example.com</p>
+                        <a href="mailto:jaiver@example.com">Enviar mensaje</a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fab fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <p>linkedin.com/in/jamarbo</p>
+                        <a href="https://linkedin.com/in/jamarbo" target="_blank">Conectar</a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fab fa-github"></i>
+                        <h3>GitHub</h3>
+                        <p>github.com/jamarbo</p>
+                        <a href="https://github.com/jamarbo" target="_blank">Ver repositorios</a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Nombre</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Asunto</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Mensaje</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <span class="logo-text">&lt;JM/&gt;</span>
+                    </div>
+                    <p>Desarrollador Full Stack apasionado por crear soluciones tecnológicas innovadoras.</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/jamarbo" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/jamarbo" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:jaiver@example.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-links">
+                        <h4>Enlaces Rápidos</h4>
+                        <ul>
+                            <li><a href="#about">Sobre Mí</a></li>
+                            <li><a href="#skills">Habilidades</a></li>
+                            <li><a href="#projects">Proyectos</a></li>
+                            <li><a href="#contact">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Jaiver Martinez. Todos los derechos reservados.</p>
+                <p>Desarrollado con <i class="fas fa-heart"></i> y mucho <i class="fas fa-coffee"></i></p>
+            </div>
+        </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
 </body>
 </html>
