@@ -62,7 +62,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero">
+    <section id="hero" class="hero" aria-labelledby="hero-title">
         <div class="hero-background">
             <div class="matrix-rain"></div>
             <div class="floating-icons">
@@ -78,50 +78,42 @@
         </div>
         <div class="hero-content">
             <div class="hero-text">
-                <h1 class="hero-title">
-                    <span class="greeting">Hola, soy</span>
-                    <span class="name">Jaiver Martinez Bonilla</span>
-                    <span class="title-typewriter">Technical Lead & Senior Java Developer</span>
-                </h1>
-                <p class="hero-description">
-                    <strong>Systems Engineer - Agile Developer</strong><br>
-                    Development Technical Lead con más de 15 años de experiencia liderando proyectos 
-                    en sectores financiero, logístico y comercial. Experto en Java, microservicios, 
-                    AWS, Azure y metodologías ágiles.
-                </p>
-                <div class="hero-location">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Bogotá D.C., Colombia</span>
+                <!-- Reemplazo el título y la intro por propuesta de valor clara -->
+                <h1 class="hero-title" id="hero-title">Technical Lead (Java, Microservices, AWS)</h1>
+                <p class="lead">+15 años escalando plataformas bancarias en la nube (AWS/Azure).</p>
+                <div class="badges">
+                    <span>Time-to-market ↓30%</span>
+                    <span>Incidentes críticos ↓40%</span>
+                    <span>CI/CD · Kubernetes</span>
                 </div>
+                <!-- CTAs: Descargar CV + Ver proyectos -->
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">
-                        <i class="fas fa-code"></i>
-                        Ver Proyectos
+                    <a href="/docs/JaiverMartinez-CV.pdf" class="btn btn-primary" download>
+                        <i class="fas fa-file-download"></i> Descargar CV
                     </a>
-                    <a href="#contact" class="btn btn-outline">
-                        <i class="fas fa-envelope"></i>
-                        Contactar
+                    <a href="#projects" class="btn btn-outline">
+                        <i class="fas fa-code"></i> Ver Proyectos
                     </a>
                 </div>
+                <!-- Social con noopener -->
                 <div class="hero-social">
-                    <a href="https://github.com/jamarbo" target="_blank" class="social-link">
+                    <a href="https://github.com/jamarbo" target="_blank" rel="noopener" class="social-link">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://linkedin.com/in/jaiver-martinez" target="_blank" class="social-link">
-                        <i class="fab fa-linkedin"></i>
+                    <a href="https://linkedin.com/in/jaiver-martinez" target="_blank" rel="noopener" class="social-link">
+                        <i class="fab fa-linkedin"></i> jaiver-martinez
                     </a>
                     <a href="mailto:jaiver.martinez@gmail.com" class="social-link">
                         <i class="fas fa-envelope"></i>
                     </a>
-                    <a href="tel:+573143390504" class="social-link">
-                        <i class="fas fa-phone"></i>
-                    </a>
+                    <!-- Opcional: ocultar teléfono para evitar spam -->
+                    <!-- <a href="tel:+573143390504" class="social-link"><i class="fas fa-phone"></i></a> -->
                 </div>
             </div>
             <div class="hero-image">
                 <div class="profile-container">
                     <div class="profile-image">
-                        <img src="images/tecnologia.jpg" alt="Jaiver Martinez - Full Stack Developer">
+                        <img src="images/tecnologia.jpg" alt="Foto de Jaiver Martinez Bonilla, Technical Lead Java">
                     </div>
                     <div class="code-snippet">
                         <div class="code-header">
@@ -426,6 +418,14 @@
                             <span class="tech-tag">Java Spring</span>
                             <span class="tech-tag">Microservicios</span>
                             <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Kubernetes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="images/tecnologia.jpg" alt="Daviplata & Colsubsidio Wallet">
                             <span class="tech-tag">Kubernetes</span>
                         </div>
                     </div>
