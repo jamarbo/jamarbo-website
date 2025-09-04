@@ -35,6 +35,8 @@
       "knowsAbout": ["Java","Spring Boot","Microservices","AWS","Azure","Kubernetes","CI/CD"]
     }
     </script>
+    <!-- Font Awesome para iconos (requerido) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer">
 </head>
 <body>
     <!-- Mobile Menu Button -->
@@ -87,28 +89,25 @@
                     <span>CI/CD · Kubernetes</span>
                 </div>
                 <!-- CTAs: Descargar CV + Ver proyectos -->
-                <div class="hero-buttons">
-                    <a href="/docs/JaiverMartinez-CV.pdf" class="btn btn-primary" download>
-                        <i class="fas fa-file-download"></i> Descargar CV
+                <div class="ctas">
+                    <!-- Ruta relativa para GitHub Pages (no usar /docs/ al inicio) -->
+                    <a class="btn btn--primary" href="docs/JaiverMartinez-CV.pdf" download>Descargar CV</a>
+                    <a class="btn btn--ghost" href="#projects">Ver proyectos</a>
+                </div>
+
+                <!-- Sustituye el bloque donde aparecen los círculos negros por esto: -->
+                <div class="hero-social hero-social--mini" aria-label="Redes y contacto">
+                    <a class="social-pill" href="https://github.com/jamarbo" target="_blank" rel="noopener" title="GitHub">
+                        <i class="fa-brands fa-github"></i>
                     </a>
-                    <a href="#projects" class="btn btn-outline">
-                        <i class="fas fa-code"></i> Ver Proyectos
+                    <a class="social-pill" href="https://www.linkedin.com/in/jaiver-martinez" target="_blank" rel="noopener" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a class="social-pill" href="mailto:jaiver.martinez@gmail.com" title="Enviar email">
+                        <i class="fa-solid fa-envelope"></i>
                     </a>
                 </div>
-                <!-- Social con noopener -->
-                <div class="hero-social">
-                    <a href="https://github.com/jamarbo" target="_blank" rel="noopener" class="social-link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/jaiver-martinez" target="_blank" rel="noopener" class="social-link">
-                        <i class="fab fa-linkedin"></i> jaiver-martinez
-                    </a>
-                    <a href="mailto:jaiver.martinez@gmail.com" class="social-link">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <!-- Opcional: ocultar teléfono para evitar spam -->
-                    <!-- <a href="tel:+573143390504" class="social-link"><i class="fas fa-phone"></i></a> -->
-                </div>
+                <!-- ...existing code... -->
             </div>
             <div class="hero-image">
                 <div class="profile-container">

@@ -1539,6 +1539,28 @@ a:hover {
   }
 }
 
+/* Iconos circulares mini en el hero */
+.hero-social--mini{
+  margin-top:.9rem;
+  display:flex;
+  gap:.75rem;
+}
+.social-pill{
+  width:40px; height:40px;
+  display:inline-flex; align-items:center; justify-content:center;
+  border-radius:999px;
+  background:rgba(255,255,255,.06);
+  border:1px solid #334155;
+  color:#e2e8f0;
+  box-shadow:0 6px 18px rgba(0,0,0,.25);
+  transition:transform .15s ease, color .15s ease, border-color .15s ease;
+}
+.social-pill i{ font-size:18px; line-height:1; }
+.social-pill:hover{ transform:translateY(-2px); color:var(--brand); border-color:var(--brand); }
+
+/* (Opcional) si quedan “círculos” anteriores, escóndelos por clase/contenedor: */
+/* .old-circles, .avatar-dots { display:none !important; } */
+
 /* ===== UTILITIES ===== */
 .text-center { text-align: center; }
 .text-left { text-align: left; }
