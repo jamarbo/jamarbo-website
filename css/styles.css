@@ -56,6 +56,7 @@ html {
   scroll-behavior: smooth;
   font-size: 16px;
   scroll-padding-top: calc(var(--nav-height) + 12px);
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -412,10 +413,15 @@ a:hover {
 
 .hero-title {
   margin-bottom: var(--spacing-md);
-  font-size: clamp(1.9rem, 6.2vw, 3rem);
+  font-size: clamp(1.8rem, 5.2vw, 2.6rem);
   line-height: 1.15;
   letter-spacing: -0.015em;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
 }
+
+.hero-title .hero-role{ display:block; }
+.hero-title .hero-stack{ display:block; color: var(--text-secondary); font-weight:600; font-size: clamp(1.1rem, 3.8vw, 1.35rem); margin-top:.25rem; }
 
 .greeting {
   display: block;
@@ -1521,9 +1527,9 @@ html{ /* ...existing code... */ scroll-padding-top: calc(var(--nav-height) + 12p
     padding: 0 var(--spacing-sm);
   }
   
-  .hero {
-    padding: var(--spacing-xl) 0;
-  }
+  .hero { padding: max(var(--spacing-xl), env(safe-area-inset-top)) 0 var(--spacing-xl); }
+  .hero-title{ font-size: clamp(1.6rem, 6vw, 2.2rem); }
+  .hero-title .hero-stack{ font-size: clamp(1rem, 3.9vw, 1.2rem); }
   
   .hero-buttons .btn {
     padding: 10px 20px;
