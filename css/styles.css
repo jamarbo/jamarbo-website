@@ -41,6 +41,8 @@
   --transition-fast: 0.2s ease;
   --transition-normal: 0.3s ease;
   --transition-slow: 0.5s ease;
+  
+  --nav-height: 72px; /* altura por defecto, JS la actualizará */
 }
 
 /* ===== RESET & BASE ===== */
@@ -53,6 +55,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  scroll-padding-top: calc(var(--nav-height) + 12px);
 }
 
 body {
@@ -322,12 +325,13 @@ a:hover {
 
 /* ===== HERO SECTION ===== */
 .hero {
-  min-height: 100vh;
+  min-height: calc(100vh - var(--nav-height));
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   overflow: hidden;
+  padding-top: calc(var(--nav-height) + var(--spacing-sm));
 }
 
 .hero-background {
@@ -408,6 +412,9 @@ a:hover {
 
 .hero-title {
   margin-bottom: var(--spacing-md);
+  font-size: clamp(1.9rem, 6.2vw, 3rem);
+  line-height: 1.15;
+  letter-spacing: -0.015em;
 }
 
 .greeting {
@@ -1323,6 +1330,28 @@ a:hover {
   margin: 0 4px;
 }
 
+/* ===== FIX: HERO EN MÓVIL BAJO NAVBAR FIJA ===== */
+:root{ /* altura por defecto; se actualiza vía JS */
+  --nav-height: 72px;
+}
+/* Compensación de anclas (#sections) */
+html{ /* ...existing code... */ scroll-padding-top: calc(var(--nav-height) + 12px); }
+/* Evita que el hero quede tapado */
+.hero{ /* ...existing code... */
+  min-height: calc(100vh - var(--nav-height));
+  padding-top: calc(var(--nav-height) + var(--spacing-sm));
+}
+/* Título más contenido en móvil */
+.hero-title{
+  /* ...existing code... */
+  font-size: clamp(1.9rem, 6.2vw, 3rem);
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+}
+@media (max-width: 480px){
+  .hero{ padding-top: calc(var(--nav-height) + var(--spacing-md)); }
+}
+
 /* ===== ANIMATIONS ===== */
 @keyframes slideInLeft {
   from {
@@ -1556,7 +1585,7 @@ a:hover {
   transition:transform .15s ease, color .15s ease, border-color .15s ease;
 }
 .social-pill i{ font-size:18px; line-height:1; }
-.social-pill:hover{ transform:translateY(-2px); color:var(--brand); border-color:var(--brand); }
+.social-pill:hover{ transform:translateY(-2px); color:var(--primary-color); border-color:var(--primary-color); }
 
 /* (Opcional) si quedan “círculos” anteriores, escóndelos por clase/contenedor: */
 /* .old-circles, .avatar-dots { display:none !important; } */

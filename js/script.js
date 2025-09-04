@@ -8,6 +8,14 @@ const navLinks = document.querySelectorAll('.nav-link');
 document.addEventListener('DOMContentLoaded', init);
 window.addEventListener('scroll', handleScroll);
 mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+document.addEventListener('DOMContentLoaded', () => {
+  const nav = document.querySelector('.navbar');
+  const setNavHeight = () => {
+    if (nav) document.documentElement.style.setProperty('--nav-height', nav.offsetHeight + 'px');
+  };
+  setNavHeight();
+  window.addEventListener('resize', setNavHeight);
+});
 
 // ===== INITIALIZATION =====
 function init() {
